@@ -66,6 +66,9 @@
 (load custom-file 'noerror)
 
 ;; You can keep system- or user-specific customizations here
+
+(require 'starter-kit-tim)
+
 (setq system-specific-config (concat dotfiles-dir system-name ".el")
       user-specific-config (concat dotfiles-dir user-login-name ".el")
       user-specific-dir (concat dotfiles-dir user-login-name))
